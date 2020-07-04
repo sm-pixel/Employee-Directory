@@ -8,9 +8,9 @@ function Search (props) {
         <div className="searchbox">
           <div className="input-group">
               <div className="input-group-prepend">
-                <span className="input-group-text" onClick={(event) => props.handleFormSubmit(event)} id="">
+                <button className="btn btn-dark" onClick={(event) => props.handleFormSubmit(event)} id="">
                   Search
-                </span>
+                </button>
               </div>
               <input
               className="form-control mr-sm-2"
@@ -18,7 +18,7 @@ function Search (props) {
               onChange={props.handleInputChange}
               name = "firstName"
               type="text"
-              placeholder="Employee name"
+              placeholder="Name"
               aria-label="Search"
             />
             </div>
