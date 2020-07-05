@@ -6,7 +6,7 @@ An application that allows you to view your entire employee directory at once
 
 # Demo
 ![Employee Directory Demo](assets/employee-directory.gif)
-[Deployed Appliation](https://sm-pixel.github.io/Employee-Directory/)
+[Deployed Application](https://smemployeedirectory.herokuapp.com/)
 
 ## User Story
 
