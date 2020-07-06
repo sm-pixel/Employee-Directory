@@ -6,7 +6,7 @@ import Search from './search';
 class TableData extends React.Component {
     state = {
         employees,
-        firstName: '',
+        lastName: '',
         sort: ''
     };
     //employees name to search
@@ -23,10 +23,10 @@ class TableData extends React.Component {
             employees: newList,
         });
     };
-    //search employee
+    //search button
     handleSearch = (event) => {
         event.preventDefault();
-        console.log("clicks")
+        
         let empSearch = employees.filter((emp) => {
             if (emp.name.first.toLowerCase().substr(0, this.state.firstName.length) === this.state.firstName.toLowerCase().substr(0, this.state.firstName.length)) {
 
@@ -40,7 +40,6 @@ class TableData extends React.Component {
     };
     //sorts last name
     handleNameSort = () => {
-
         let newList = this.state.employees
 
         if (this.state.sort === "ASC") {
